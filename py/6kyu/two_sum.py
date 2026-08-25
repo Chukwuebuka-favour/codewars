@@ -17,8 +17,10 @@ two_sum([3, 2, 4], 6) # returns (1, 2) or (2, 1)
 # MY SOLUTION
 def two_sum(numbers, target):
     for i in range(len(numbers)):
-        for j in range(i+1, range(numbers)):
+        for j in range(i+1, len(numbers)):
             if numbers[i] + numbers[j] == target:
                 return (i,j)
+
+print(two_sum([3, 2, 4], 6))
 
 # ALTERNATIVE SOLUTION
