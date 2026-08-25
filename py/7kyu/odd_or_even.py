@@ -24,6 +24,10 @@ Output: "even"
 
 odd_or_even = lambda arr: "even" if sum(arr) % 2 == 0 else "odd"
 
+odd_or_even = lambda arr: "{}".format("even" if sum(arr) % 2 == 0 else 'odd')
+
+print(odd_or_even([0, -1, -5]))
+
 # ALTERNATIVE SOLUTION
 def oddOrEven(arr):
     return ('even', 'odd')[sum(arr) % 2] #CLEVER
