@@ -29,3 +29,7 @@ def is_triangle(a, b, c):
         return False
     else:
         return True
+
+is_triangle = lambda a,b,c: (a+b > c and a+c > b and b+c > a)
+print(is_triangle(4,2,3))
+print(is_triangle(1,2,3))
