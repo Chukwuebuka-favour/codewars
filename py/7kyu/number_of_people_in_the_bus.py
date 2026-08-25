@@ -16,5 +16,16 @@ The second value in the first pair in the array is 0, since the bus is empty in 
 '''
 
 # MY SOLUTION
+def number(bus_stops):
+    getting_on = 0
+    getting_off = 0
+    
+    for stops in bus_stops:
+        getting_on += int(stops[0])
+        getting_off += int(stops[1])
+    
+    return getting_on - getting_off if getting_on > getting_off else 0
 
 # ALTERNATIVE SOLUTION
+def number(stops):
+    return sum(i - o for i, o in stops)
