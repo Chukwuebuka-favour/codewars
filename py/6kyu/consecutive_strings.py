@@ -29,7 +29,8 @@ consecutive strings : follow one after another without an interruption
 
 def longest_consec(strarr, k):
     result = ''
-    if len(strarr) >= 0 and k>0:
+    n = len(strarr)
+    if 0 < n >= k and k>0:
         for i in range(len(strarr) - k + 1):
             s = "".join(strarr[i:i+k])
             if len(s) > len(result):
@@ -38,4 +39,4 @@ def longest_consec(strarr, k):
 
 
 
-print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+# print(longest_consec(["zone", "abigail"], 2))
