@@ -38,5 +38,3 @@ def longest_consec(strarr, k):
         return result
 
 
-
-# print(longest_consec(["zone", "abigail"], 2))
