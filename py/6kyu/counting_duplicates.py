@@ -16,5 +16,17 @@ Example
 '''
 
 # MY SOLUTION
+def duplicate_count(s):
+    duplicate = 0
+    for i in set(s.lower()):
+        count = s.lower().count(i)
+        if count > 1:
+            duplicate += 1
+    return duplicate
+
+print(duplicate_count("indivisibility"))
+print(duplicate_count("indivisibilities"))
+print(duplicate_count("aA11"))
+print(duplicate_count("abcde"))
 
 # ALTERNATIVE SOLUTION
