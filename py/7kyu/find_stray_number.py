@@ -21,3 +21,6 @@ def stray(arr):
 # ALTERNATIVE SOLUTION(S)
 def stray(arr):
     return min(arr, key=arr.count)
+
+def stray(arr):
+    return [x for x in set(arr) if arr.count(x) == 1][0]

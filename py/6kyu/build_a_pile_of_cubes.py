@@ -75,9 +75,6 @@ findNb(91716553919377) --> -1
 # print(find_m(45))
 
 def find_nb(m):
-
-
-    
     n = (-1 + ((1 + (8 * (m ** 0.5))) ** 0.5))/2
     if n % 1:
         return -1
